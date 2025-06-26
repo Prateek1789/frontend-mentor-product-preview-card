@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/Fonts/Montserrat/Montserrat-Variable-Weight.ttf') format('truetype');
+    font-weight: 500 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fraunces';
+    src: url('./assets/Fonts/Fraunces/Fraunces-Variable-Weight.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --color-green-500: hsl(158, 36%, 37%);
+    --color-green-700: hsl(158, 42%, 18%);
+    --color-black: hsl(212, 21%, 14%);
+    --color-grey: hsl(228, 12%, 48%);
+    --color-cream: hsl(30, 38%, 92%);
+    --color-white: hsl(0, 0%, 100%);
+    --font-size-100: 0.875rem;
+    --font-size-200: 1.125rem;
+    --padding-100: 1rem;
+    --padding-200: 1.5rem;
+    --padding-300: 2rem;
+    --padding-400: 2.5rem;
+    --padding-500: 3rem;
+    --padding-600: 3.5rem;
+    --padding-650: 3.75rem;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+}
+
+.font-fraunces {
+    font-family: 'Fraunces', serif;
+}
+
+.bg-cream-200 {
+    background-color: var(--color-cream);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
