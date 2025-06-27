@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Frontend Mentor | Product preview card component">
   <meta name="author" content="Prateek">
   <meta name="robots" content="index, follow">
@@ -11,51 +11,42 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 </head>
-<body class="w-[100vw] h-[100vh] py-8 px-4 flex justify-center items-center bg-cream-200">
+<body class="w-[100vw] h-[100vh] flex flex-col gap-2 md:gap-6 justify-center items-center">
   <!-- Card Container -->
-  <main class="w-[100%] h-[calc(100vh-var(--padding-650))] grid grid-cols-1 grid-rows-[1fr_2fr] bg-white rounded-xl">
+  <main class="w-[100%] max-w-[21.4375rem] h-[calc(100vh-var(--padding-650))] max-h-[37.9375rem] bg-white rounded-xl grid grid-cols-1 grid-rows-[1fr_2fr] md:grid-cols-2 md:grid-rows-1 md:max-w-[47rem] md:max-h-[36rem]">
     <picture class="w-full h-full">
       <source media="(min-width: 768px)"
               srcset="./assets/images/image-product-desktop.jpg 600w">
       <source media="(max-width: 768px)"
               srcset="./assets/images/image-product-mobile.jpg 686w">
-      <img src="./assets/images/image-product-mobile.jpg" alt="Product Image" class="w-full h-full object-cover rounded-tl-xl rounded-tr-xl">
+      <img src="./assets/images/image-product-mobile.jpg" alt="Chanel Parfum image" class="w-full h-full object-cover rounded-tl-xl rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl">
     </picture>
-    <div class="product-details flex p-6 flex-col justify-between">
-      <div class="product-description flex flex-col gap-3">
-        <p class="product-tag text-gray-500 uppercase tracking-[0.25rem] text-sm font-medium">Perfume</p>
-        <h1 class="product-name text-black text-[2rem] font-bold leading-8">Gabrielle Essence Eau De Parfum</h1>
-        <p class="product-description-text text-gray-500 text-sm font-medium leading-6">
+    <div class="product-details flex p-6 flex-col justify-between md:p-10">
+      <div class="product-description h-full flex flex-col md:gap-6">
+        <p class="product-tag text-gray-500 uppercase tracking-[0.25rem] mb-2 md:mb-0">Perfume</p>
+        <h1 class="product-name text-black font-bold leading-8 md:leading-11">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product-description-text text-gray-500 font-medium leading-6 md:leading-7 mt-3 md:my-2">
           A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
         </p>
       </div>
-      <div class="price-container h-full w-full flex flex-0 flex-col gap-4">
+      <div class="price-container h-full w-full flex flex-0 flex-col gap-4 md:gap-7">
         <span class="flex items-center gap-4">
-          <p class="text-green-500 text-3xl font-bold font-fraunces text-2xl">$149.99</p>
-          <p class="text-gray-500 text-sm font-medium line-through">$169.99</p>
+          <p class="new-price text-green-500 font-bold">$149.99</p>
+          <p class="old-price text-gray-500 line-through">$169.99</p>
         </span>
-        <button type="button" class="h-12 bg-green-500 hover:bg-green-700 cursor-pointer text-white px-4 py-2 rounded-md flex justify-center items-center gap-2">
-          <img src="./assets/images/icon-cart.svg" alt="Cart Icon" class="w-4 h-4">
-          <p class="text-white text-sm font-bold">Add to Cart</p>
+        <button type="button" class="h-12 md:h-14 bg-green-500 hover:bg-green-700 transition duration-300 cursor-pointer text-white px-4 py-2 rounded-md md:rounded-lg flex justify-center items-center gap-2">
+          <img src="./assets/images/icon-cart.svg" alt="Cart Icon" aria-hidden="true" class="w-4 h-4">
+          <p class="text-white font-bold">Add to Cart</p>
         </button>
       </div>
     </div>
   </main>
-  <!-- Perfume
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    <p class="text-center">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/Prateek1789" target="_blank">Prateek</a>.
+    </p>
+  </div>
 </body>
 </html>
